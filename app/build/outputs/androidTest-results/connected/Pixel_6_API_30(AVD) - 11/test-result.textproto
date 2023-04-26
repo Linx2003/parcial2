@@ -1,0 +1,73 @@
+# 2023-04-25T13:32:24.723Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "Fibonacci_IU"
+    test_package: "com.example.parcial2"
+    test_method: "testNumber"
+    start_time {
+      seconds: 1682429541
+      nanos: 847000000
+    }
+    end_time {
+      seconds: 1682429544
+      nanos: 13000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "androidx.test.espresso.PerformException: Error performing \'single click - At Coordinates: 538, 1239 and precision: 16, 16\' on view \'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131230818/com.example.parcial2:id/button>\'.\nat androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)\nat androidx.test.espresso.base.PerformExceptionHandler.handleSafely(PerformExceptionHandler.java:8)\nat androidx.test.espresso.base.PerformExceptionHandler.handleSafely(PerformExceptionHandler.java:9)\nat androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\nat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\nat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)\nat com.example.parcial2.Fibonacci_IU.testNumber(Fibonacci_IU.java:30)\n... 33 trimmed\nCaused by: java.lang.IllegalStateException: Could not execute method for android:onClick\nat androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:473)\nat android.view.View.performClick(View.java:7448)\nat com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1202)\nat android.view.View.performClickInternal(View.java:7425)\nat android.view.View.access$3600(View.java:810)\nat android.view.View$PerformClick.run(View.java:28305)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\nat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\nat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)\nat androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:5)\nat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)\nat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)\nat androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)\nat androidx.test.espresso.action.Tap.-$$Nest$smsendSingleTap(Unknown Source:0)\nat androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)\nat androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)\nat androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)\nat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:7)\nat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loop(Looper.java:223)\nat android.app.ActivityThread.main(ActivityThread.java:7656)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)\nCaused by: java.lang.reflect.InvocationTargetException\nat java.lang.reflect.Method.invoke(Native Method)\nat androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:468)\n... 30 more\nCaused by: java.lang.NumberFormatException: For input string: \"androidx.appcompat.widget.AppCompatEditText{deb32ea VFED..CL. .F...... 263,562-813,680 #7f0800ab app:id/editTextTextPersonName aid=1073741824}\"\nat java.lang.Integer.parseInt(Integer.java:615)\nat java.lang.Integer.valueOf(Integer.java:801)\nat com.example.parcial2.MainActivity.Fibonacci(MainActivity.java:36)\n... 32 more"
+    error_type: "java.lang.IllegalStateException"
+    stack_trace: "androidx.test.espresso.PerformException: Error performing \'single click - At Coordinates: 538, 1239 and precision: 16, 16\' on view \'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131230818/com.example.parcial2:id/button>\'.\nat androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)\nat androidx.test.espresso.base.PerformExceptionHandler.handleSafely(PerformExceptionHandler.java:8)\nat androidx.test.espresso.base.PerformExceptionHandler.handleSafely(PerformExceptionHandler.java:9)\nat androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:4)\nat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:5)\nat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\nat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\nat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)\nat com.example.parcial2.Fibonacci_IU.testNumber(Fibonacci_IU.java:30)\n... 33 trimmed\nCaused by: java.lang.IllegalStateException: Could not execute method for android:onClick\nat androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:473)\nat android.view.View.performClick(View.java:7448)\nat com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1202)\nat android.view.View.performClickInternal(View.java:7425)\nat android.view.View.access$3600(View.java:810)\nat android.view.View$PerformClick.run(View.java:28305)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\nat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\nat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)\nat androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:5)\nat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)\nat androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)\nat androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)\nat androidx.test.espresso.action.Tap.-$$Nest$smsendSingleTap(Unknown Source:0)\nat androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)\nat androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)\nat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\nat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)\nat androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)\nat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:7)\nat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\nat java.util.concurrent.FutureTask.run(FutureTask.java:266)\nat android.os.Handler.handleCallback(Handler.java:938)\nat android.os.Handler.dispatchMessage(Handler.java:99)\nat android.os.Looper.loop(Looper.java:223)\nat android.app.ActivityThread.main(ActivityThread.java:7656)\nat java.lang.reflect.Method.invoke(Native Method)\nat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)\nCaused by: java.lang.reflect.InvocationTargetException\nat java.lang.reflect.Method.invoke(Native Method)\nat androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:468)\n... 30 more\nCaused by: java.lang.NumberFormatException: For input string: \"androidx.appcompat.widget.AppCompatEditText{deb32ea VFED..CL. .F...... 263,562-813,680 #7f0800ab app:id/editTextTextPersonName aid=1073741824}\"\nat java.lang.Integer.parseInt(Integer.java:615)\nat java.lang.Integer.valueOf(Integer.java:801)\nat com.example.parcial2.MainActivity.Fibonacci(MainActivity.java:36)\n... 32 more"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\salas\\AndroidStudioProjects\\Parcial2\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_6_API_30(AVD) - 11\\logcat-com.example.parcial2.Fibonacci_IU-testNumber.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\salas\\AndroidStudioProjects\\Parcial2\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_6_API_30(AVD) - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\salas\\AndroidStudioProjects\\Parcial2\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_6_API_30(AVD) - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\salas\\AndroidStudioProjects\\Parcial2\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_6_API_30(AVD) - 11\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\salas\\AndroidStudioProjects\\Parcial2\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_6_API_30(AVD) - 11\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
